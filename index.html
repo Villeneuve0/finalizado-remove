@@ -22,6 +22,8 @@
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
       border: 2px solid #ffa500;
+      max-width: 400px;
+      width: 100%;
     }
     h1 {
       color: #ff6a00;
@@ -33,13 +35,36 @@
       max-width: 180px;
       margin-bottom: 20px;
     }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #ff6a00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e65c00;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="imagens/tadala-premium.webp" alt="Tadala Premium" />
     <h1>Central de Vendas Tadala Premium</h1>
-    <p>Estamos redirecionando você para o atendimento da Tadala Premium...</p>
+    <p>Digite seu nome para iniciar o atendimento:</p>
+    <input type="text" placeholder="Seu nome completo" />
+    <button>Iniciar Atendimento</button>
   </div>
 </body>
 </html>
